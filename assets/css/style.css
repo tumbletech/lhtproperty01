@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+/*================== Main =========================*/
 * {
     margin: 0;
     padding: 0;
@@ -8,6 +9,8 @@
 body {
     background-image: url(bertram399.svg);
 }
+/*==================================================*/
+
 
 svg {
     height: 40%;
@@ -26,9 +29,9 @@ path {
     fill: yellow;
 }
 
-path #path20 {
-    fill: magenta;
-    opacity: 0.45;
+#path20 {
+    fill: blue;
+    opacity: 0.60;
     stroke: #000;
     stroke-width: 10px;
     transition: fill 0.3s;
@@ -36,4 +39,45 @@ path #path20 {
 
 .map_section #path20 :hover {
     fill: blue;
+}
+
+/*======= Tooltips =======*/
+
+.tooltip-click-01 {
+    font-family:Arial, Helvetica, sans-serif;
+    margin-top: -120px;
+    margin-left: 520px;
+    cursor: pointer;
+}
+
+.quick-tooltip-popup01 {
+    position: absolute;
+    display: inline-block;
+    cursor: pointer;
+    top: 80%;
+    left: 35%;
+    border-width: 10px;
+    background-color: black;
+    width: 125px;
+    height: 50px;
+    border-radius: 6px;
+    visibility: hidden;
+}
+
+.quick-tooltip-popup01 h4 {
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.quick-tooltip-popup01 p {
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+.tooltip-popup01:hover .quick-tooltip-popup01 {
+    fill: yellow;
+    visibility: visible;
+    
 }
